@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-database.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <title>Firebase</title>
+</head>
+
+<body>
+
+    <h1 class="notifications fillall">Fill All Fields</h1>
+    <h1 class="notifications inserted">Added Successfully</h1>
+    <h1 class="notifications updated">Updated Successfully</h1>
+
+    <div class="comtainer">
+        <form action="/" method="POST" enctype="multipart/form-data">
+            <h1 class="logo">Ristorant golany</h1>
+            <select name="category">
+                <option value="category1">Category1</option>
+                <option value="category2">Category2</option>
+                <option value="category3">Category3</option>
+                <option value="category4">Category4</option>
+            </select>
+            <input type="text" name="title" placeholder="Title">
+            <input type="number" name="price" placeholder="price">
+            <input type="file" name="image">
+            <input type="submit" name="submit" value="Add">
+        </form>
+    </div>
+
+
+    <div class="menu" id="menu">
+        <!--<h1>Category-1</h1>-->
+        <h1>Category-1</h1>
+        <div class="category1"></div>
+        <!--<h1>Category-2</h1>-->
+        <h1>Category-2</h1>
+        <div class="category2"></div>
+        <!--<h1>Category-3</h1>-->
+        <h1>Category-3</h1>
+        <div class="category3"></div>
+        <!--<h1>Category-4</h1>-->
+        <h1>Category-4</h1>
+        <div class="category4"></div>
+    </div>
+
+
+    <script src="menu.js"></script>
+    <script src="firebase.js"></script>
+
+
+</body>
+
+</html>
